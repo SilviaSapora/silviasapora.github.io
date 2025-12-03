@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silvia Sapora</title>
+    <style>
+        /* MINIMALIST ACADEMIC STYLING */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            font-size: 16px;
+        }
+
+        /* LINKS */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* HEADINGS */
+        h1 {
+            font-size: 2.2em;
+            margin-bottom: 0.2em;
+            color: #111;
+        }
+        h2 {
+            font-size: 1.2em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #555;
+        }
+
+        /* SECTIONS */
+        .header-section {
+            display: flex;
+            gap: 40px;
+            align-items: flex-start;
+            margin-bottom: 40px;
+        }
+        .profile-text {
+            flex: 1;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #f0f0f0; /* Placeholder color */
+            flex-shrink: 0;
+        }
+
+        /* LISTS */
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        
+        /* DATES & FORMATTING */
+        .date {
+            font-family: monospace;
+            color: #666;
+            min-width: 100px;
+            display: inline-block;
+        }
+        .paper-title {
+            font-weight: 600;
+        }
+        .me {
+            font-weight: bold; /* Highlights your name in author lists */
+            text-decoration: underline;
+        }
+        .venue {
+            font-style: italic;
+            color: #555;
+        }
+        .tag {
+            background-color: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            color: #555;
+            margin-left: 5px;
+        }
+        .job-alert {
+            display: inline-block;
+            background-color: #e6f4ea; /* Light green background */
+            color: #1e7e34; /* Dark green text */
+            padding: 5px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-bottom: 15px;
+            border: 1px solid #c3e6cb;
+        }
+
+        /* MOBILE ADJUSTMENT */
+        @media (max-width: 600px) {
+            .header-section {
+                flex-direction: column-reverse; /* Puts photo on top on mobile */
+                gap: 20px;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header-section">
+        <div class="profile-text">
+            <div class="job-alert">
+                🕵️‍♀️ Open to Work: Looking for full-time roles starting 2026
+            </div>
+            <h1>Silvia Sapora</h1>
+            <p>
+                I am a PhD student in Statistics at the <strong>University of Oxford</strong>, 
+                supervised by  <strong>Yee Whye Teh</strong> and <strong>Jakob Foerster</strong>.
+                My research focuses on Reinforcement Learning, Meta-Learning, and Large Language Models.
+            </p>
+            <p>
+                Previously, I was a Machine Learning Research Intern at <strong>Apple</strong> 
+                and <strong>SamayaAI</strong>, and a Software Engineer at <strong>Meta</strong> working on Applied Machine Learning. 
+                I hold a First Class MEng in Computer Science from Imperial College London.
+            </p>
+            <p>
+                <a href="mailto:silvia.sapora@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="https://linkedin.com/in/silvia-sapora">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://github.com/SilviaSapora">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=FxdgVLkAAAAJ&hl=it">Google Scholar</a>
+            </p>
+        </div>
+        <img src="profile_photo.jpg" alt="Silvia Sapora" class="profile-photo">
+    </div>
+
+    <h2>Research Interests</h2>
+    <p>
+        My primary research interest is the intersection of <strong>Meta-Learning</strong>, <strong>Reinforcement Learning</strong> and <strong>Large Language Models</strong>.
+        My past work has focused on automated discovery: from meta-learning 
+        shaped reward functions and robust Inverse Reinforcement Learning algorithms, to improved objectives 
+        for offline <strong>LLM Preference Optimization</strong>, and most recently, <strong>interpretable IRL 
+        through code evolution</strong>.
+    </p>
+
+
+    <h2>Selected Publications</h2>
+    <ul>
+        <li>
+            <div class="paper-title">GRACE: A Language Model Framework for Explainable Inverse Reinforcement Learning</div>
+            <div><span class="me">S. Sapora</span>, D. Hjelm, A. Toshev, B. Mazoure</div>
+            <div class="venue">Under Review (arXiv:2510.02180)</div>
+            <div>
+                <a href="https://arxiv.org/abs/2510.02180">[arXiv]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">Programming by Backprop: LLMs Acquire Reusable Algorithmic Abstractions During Code Training</div>
+            <div>J. Cook*, <span class="me">S. Sapora</span>*, A. Ahmadian, A. Khan, T. Rocktäschel, J. Foerster, L. Ruis</div>
+            <div class="venue">Under Review (arXiv:2506.18777)</div>
+            <div>
+                <a href="https://arxiv.org/abs/2506.18777">[arXiv]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">Meta-Learning Objectives for Preference Optimization</div>
+            <div>C. Alfano*, <span class="me">S. Sapora</span>*, J. Foerster, P. Rebeschini, Y.W. Teh</div>
+            <div class="venue">NeurIPS 2025</div>
+            <div>
+                <a href="https://arxiv.org/abs/2411.06568">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">EvIL: Evolution Strategies for Generalisable Imitation Learning</div>
+            <div><span class="me">S. Sapora</span>, G. Swamy, C. Lu, Y.W. Teh, J. Foerster</div>
+            <div class="venue">ICML 2024</div>
+            <div>
+                <a href="https://arxiv.org/abs/2406.11905">[PDF]</a> <a href="#">[Code]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">JAX-LOB: A GPU-Accelerated limit order book simulator</div>
+            <div>S. Frey, K. Li, P. Nagy, <span class="me">S. Sapora</span>, Z. Zohren, J. Foerster, A. Calinescu</div>
+            <div class="venue">ICAIF 2023 <span class="tag">Best Academic Paper Award</span></div>
+            <div>
+                <a href="https://arxiv.org/abs/2308.13289">[PDF]</a>
+            </div>
+        </li>
+
+        <li>
+            <div class="paper-title">Generative ai for end-to-end limit order book modelling: A token-level autoregressive generative model of message flow using a deep state space network</div>
+            <div>P. Nagy, S. Frey, <span class="me">S. Sapora</span>, K. Li, A. Calinescu, S. Zohren, J. Foerster</div>
+            <div class="venue">ICAIF 2023</div>
+            <div>
+                <a href="https://arxiv.org/abs/2308.13289">[PDF]</a>
+            </div>
+        </li>
+    
+    </ul>
+
+    <div style="margin-top: 60px; font-size: 0.8em; color: #999;">
+        &copy; 2025 Silvia Sapora.
+    </div>
+
+</body>
+</html>
